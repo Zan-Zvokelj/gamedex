@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <title>Game Dex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7975218fdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">GAME <SPAN>DEX</SPAN></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li class="active"><a href="Store.html">Store</a></li>
+
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <header>
+        <h1>Shop Online</h1>
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+            </div>
+            <div class="whole-cart-window hide">
+                <h2>Shopping Bag</h2>
+                <div class="cart-wrapper">
+
+
+                </div>
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div class="checkout">Checkout</div>
+                <div class="view-cart">View Cart</div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="shop-section">
+        <div class="card-wrapper">
+
+            <div data-id="1" class="card-item">
+                <img src="puzzlee.jpg" />
+                <div class="details">
+                    <h3>Puzzle</h3>
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+                        <span class="price">Price: $2.50</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <!-- item 2-->
+            <div data-id="2" class="card-item">
+                <img src="monopoly.jpg" alt="monopoly">
+                <div class="details">
+                    <h3>Monopoly</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+                        <span class="price">Price: $3.50</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <!-- item 3-->
+            <div data-id="3" class="card-item">
+                <img src="chess.jpg" alt="chess">
+                <div class="details">
+                    <h3>Chess</h3>
+                    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+
+                        <span class="price">Price: $1.50</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+
+            </div>
+    </section>
+
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Thank you for your Purchase!</h2>
+          <p>Your order has been processed successfully.</p>
+          <p>Total Amount: <span id="subtotalAmount">$0.00</span></p>
+        </div>
+      </div>
+
+    <footer>
+        <div class="footerContent">
+            <h3>Game <span>Dex</span></h3>
+            <p>Fast delivery and free shipping nationwide! Feel free to contact us if you have any questions.</p>
+            <ul class="socials">
+                <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://google.com"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Game <span>Dex</span>. Designed by Zan</p>
+        </div>
+    </footer>
+
+    <script src="store.js"></script>
+
+    
+</body>
+
+</html>
