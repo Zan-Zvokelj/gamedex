@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game Dex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7975218fdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">GAME <SPAN>DEX</SPAN></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Main.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Store.html">Store</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <div class="textbody">
+        <h1>Welcome to <br> Game <span>Dex</span></h1>
+        <h3>Game Loans and Tic-Tac-Toe Thrills - Level Up Your Fun!</h3>
+    </div>
+
+    <div id="gameContainer">
+        <h1>Tic Tac Toe</h1>
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+
+    <footer>
+        <div class="footerContent">
+            <h3>Game <span>Dex</span></h3>
+            <p>Fast delivery and free shipping nationwide! Feel free to contact us if you have any questions.</p>
+            <ul class="socials">
+                <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://google.com"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Game <span>Dex</span>. Designed by Zan</p>
+        </div>
+    </footer>
+
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
